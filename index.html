@@ -1,97 +1,125 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
-  <title>Hussaini Tour & Travels | Umrah Services</title>
+  <title>Hussaini Tour & Travels | Hajj & Umrah Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #064e3b, #065f46);
-      color: white;
-      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background:#f8fafc;
+      color:#1f2937;
     }
-    .container {
-      padding: 40px 20px;
+    header {
+      background: linear-gradient(135deg,#065f46,#064e3b);
+      color:white;
+      padding:60px 20px;
+      text-align:center;
     }
-    h1 {
-      font-size: 32px;
-    }
+    header h1 { font-size:40px; font-weight:700; }
+    header p { margin-top:10px; font-size:18px; opacity:0.9; }
     .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 10px;
-      background: #facc15;
-      color: black;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
+      display:inline-block;
+      margin:15px 10px 0;
+      padding:12px 22px;
+      background:#facc15;
+      color:#000;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:600;
+      transition:0.3s;
     }
-    .section {
-      background: #047857;
-      padding: 30px 20px;
-      margin-top: 30px;
+    .btn:hover { background:#eab308; }
+    section { padding:60px 20px; text-align:center; }
+    .container { max-width:1100px; margin:auto; }
+    .packages { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:40px; }
+    .card {
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
     }
+    .card h3 { margin-bottom:15px; color:#065f46; }
+    .card p { font-size:14px; margin-bottom:20px; }
+    form { max-width:600px; margin:30px auto 0; display:grid; gap:15px; }
     input, select, textarea {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: none;
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #d1d5db;
+      font-family:'Poppins', sans-serif;
     }
     button {
-      padding: 12px 20px;
-      background: #facc15;
-      border: none;
-      border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
+      padding:12px;
+      border:none;
+      border-radius:30px;
+      background:#065f46;
+      color:white;
+      font-weight:600;
+      cursor:pointer;
     }
+    button:hover { background:#047857; }
+    footer {
+      background:#111827;
+      color:white;
+      padding:30px 20px;
+      text-align:center;
+      margin-top:40px;
+    }
+    footer p { margin:5px 0; font-size:14px; }
   </style>
 </head>
 <body>
 
+<header>
+  <h1>Hussaini Tour & Travels</h1>
+  <p>Trusted Hajj & Umrah Services – Your Spiritual Journey Starts Here</p>
+  <a class="btn" href="https://wa.me/918218668728" target="_blank">WhatsApp 8218668728</a>
+  <a class="btn" href="https://wa.me/918923885910" target="_blank">WhatsApp 8923885910</a>
+</header>
+
+<section>
   <div class="container">
-    <h1>Hussaini Tour & Travels</h1>
-    <p>Hajj & Umrah Services – Your Journey of Faith Begins Here</p>
-
-    <a class="btn" href="https://wa.me/918218668728" target="_blank">
-      WhatsApp 8218668728
-    </a>
-
-    <a class="btn" href="https://wa.me/918923885910" target="_blank">
-      WhatsApp 8923885910
-    </a>
-  </div>
-
-  <div class="section">
     <h2>Our Umrah Packages</h2>
-    <p>Economy | Deluxe | VIP</p>
-    <p>Visa, Flight, Hotel & Complete Guidance Included</p>
+    <div class="packages">
+      <div class="card">
+        <h3>Economy Package</h3>
+        <p>Affordable package with quality hotel stay, visa processing & full guidance.</p>
+      </div>
+      <div class="card">
+        <h3>Deluxe Package</h3>
+        <p>Premium hotels near Haram, smooth travel experience & dedicated support.</p>
+      </div>
+      <div class="card">
+        <h3>VIP Package</h3>
+        <p>Luxury stay, priority arrangements & complete personalized assistance.</p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Online Inquiry Form</h2>
+<section style="background:#ecfdf5;">
+  <div class="container">
+    <h2>Online Inquiry</h2>
     <form action="mailto:hussainitour@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="Name" placeholder="Full Name" required>
       <input type="tel" name="Phone" placeholder="Phone Number" required>
       <select name="Package">
-        <option>Economy</option>
-        <option>Deluxe</option>
-        <option>VIP</option>
+        <option>Economy Package</option>
+        <option>Deluxe Package</option>
+        <option>VIP Package</option>
       </select>
       <textarea name="Message" placeholder="Your Message"></textarea>
-      <br>
       <button type="submit">Submit Inquiry</button>
     </form>
   </div>
+</section>
 
-  <div class="section">
-    <h3>Contact</h3>
-    <p>📞 +91 82186 68728 | +91 89238 85910</p>
-    <p>📍 Jagatpur Old City, Bareilly</p>
-    <p>© 2015 Hussaini Tour & Travels</p>
-  </div>
+<footer>
+  <p>📞 +91 82186 68728 | +91 89238 85910</p>
+  <p>📍 Jagatpur Old City, Bareilly</p>
+  <p>© 2015 Hussaini Tour & Travels. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
